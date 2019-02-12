@@ -5,15 +5,13 @@ function calculMoyenne() {
     let count = 0;
 
     do {
-        if (Number.isInteger(Number(nombre))) {
+        if (Number.isInteger(nombre)) {
             count++;
             somme += Number(nombre);
         }
         else {
             alert('Erreur');
         }
-        console.log(somme);
-        console.log(count);
 
         nombre = prompt('Entrer un nombre entier: ');
     }
