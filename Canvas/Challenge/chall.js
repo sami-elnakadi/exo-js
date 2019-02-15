@@ -48,7 +48,7 @@ canv.closePath();
 canv.fill();
 
 
-    //corps
+    //corps 
 canv.fillStyle="yellow";
 canv.fillRect(300,300,150,100);
 
