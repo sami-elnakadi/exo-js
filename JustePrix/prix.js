@@ -23,7 +23,7 @@ function prix (){
     while(nb!=guess);
     
     if(nb===guess){
-        alert('You win in ' +count+ 'coups!');
+        alert('Tu as gagné en ' +count+ ' coups!');
 
     }
     console.log(answer);
