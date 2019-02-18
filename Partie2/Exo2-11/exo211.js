@@ -7,12 +7,12 @@ function calculMoyenne() {
     do {
         if (Number.isInteger(nombre)) {
             count++;
-            somme += Number(nombre);
-        }
+            somme += Numbers(nombre);
+        } 
         else {
             alert('Erreur');
         }
-
+        console.log(nombre);
         nombre = prompt('Entrer un nombre entier: ');
     }
     while (nombre >= 0);

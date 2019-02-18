@@ -44,7 +44,7 @@ canv.moveTo(500,410);
 canv.beginPath();
 canv.bezierCurveTo(503,400,500,420,530,420);
 canv.lineTo(670,420);
-canv.bezierCurveTo(670,420,698,420,697  ,400);
+canv.bezierCurveTo(670,420,698,420,697,400);
 canv.closePath();
 canv.stroke();
 canv.fill();
