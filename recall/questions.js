@@ -145,11 +145,23 @@ var getAllLetters = function(array) {
 
 
 var swapKeysAndValues = function(object) {
-    return 'Write your method here';
+    let result = {};
+    for(let key in object){
+        result[object[key]] = key;
+    }
+
+    return result;
+
+
 }
 
 var sumKeysAndValues = function(object) {
-    return 'Write your method here';
+
+  let result = 0;
+  for(let key in object){
+      result += Number(object[key]) + Number(key);
+  }
+  return result
 }
 
 var removeCapitals = function(string) {
@@ -170,7 +182,15 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
-    return 'Write your method here';
+  if(!string.split) return string;
+    var _titleizeWord = function(strin) {
+            return strin.charAt(0).toUpperCase() + strin.slice(1).toLowerCase();
+        },
+        result = [];
+    string.split(" ").forEach(function(w) {
+        result.push(_titleizeWord(w));
+    });
+    return result.join(" ");
 }
 
 var checkForSpecialCharacters = function(string) {
@@ -194,15 +214,21 @@ var factorial = function(number) {
 }
 
 var findAnagrams = function(string) {
-  let array = string.split(""); 
-  let tab=[];
-  for(let i = 0; i<array.length; i++){
+  // let array = string.split(""); 
+  // let tab=[];
+  // for(let i = 0; i<array.length; i++){
     
-    console.log(array);
-  }
- 
-  
-    return 'Write your method here';
+  //   console.log(array);
+  // }
+  let a = string.split('');
+    let result = [];
+    a.forEach(function (letter) {
+        remainder = a.filter(function (element) {
+            return element != letter;
+        });
+        result.push(letter + remainder.join(''), letter + (remainder.reverse()).join(''));
+    });
+    return result.sort();
 }
 
 var convertToCelsius = function(number) {
