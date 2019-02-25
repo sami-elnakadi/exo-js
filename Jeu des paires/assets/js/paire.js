@@ -47,8 +47,7 @@ document.addEventListener("click", function(a){
 
 function check() {
     if(p1.src2==p2.src2){
-        p1.replaceWith( document.createElement('span'))
-        p2.replaceWith( document.createElement('span'))
+        p2.src = p1.src = 'assets/img/transp1.png';
         score=+ 50;
         alert("Bien joué, tu as trouvé une paire!");
     }
