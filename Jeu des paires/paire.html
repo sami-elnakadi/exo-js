@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
     <title>Jeu des paires</title>
@@ -10,15 +10,14 @@
     <h3>Trouves l'ensemble des paires du jeu. Attention, tu es chronométré!</h3>
 </header>
 <body>
+    <h3>Score:<span id="score">0</span></h3>
+    <h3>Timer<span id="time"></span></h3>
 
     <section>
-            <form class="jeu">
-                <input class="bouton" type="button" value="COMMENCER" onload="genere()" />
-                    
-                    
+            <form class="jeu"> 
                 <input class="bouton" type="button" value="NOUVELLE PARTIE" onclick="rejoue()" />
             </form>
-              
+    <div class='fond'>      
             <div class="jeu">
                 <img src="assets/img/carte.jpg" alt="1er carte" height="130" width="86" id="carte0" class="img"/>
                 <img src="assets/img/carte.jpg" alt="2er carte" height="130" width="86" id="carte1" class="img"/>
@@ -43,7 +42,7 @@
                 <img src="assets/img/carte.jpg" alt="15er carte" height="130" width="86" id="carte14"class="img"/>
                 <img src="assets/img/carte.jpg" alt="16er carte" height="130" width="86" id="carte15" class="img"/>
             </div>  
-                   
+    </div>                   
     </section>          
     <script src="assets/js/paire.js"></script>
 </body>

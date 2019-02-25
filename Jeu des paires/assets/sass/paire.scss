@@ -9,6 +9,7 @@
 
 body{
     background-color: #ABC8E2;
+    
 }
 
 h1, h3{
@@ -16,9 +17,17 @@ h1, h3{
     text-align: center;
 }
 
+.fond{
+    background-image: url('../img/logo1.png');
+    z-index : 2;
+    background-repeat: no-repeat;
+    margin-left: 465px;
+}
+
 .jeu{
     display: flex;
     justify-content: center;
+    margin-right: 460px;
 }
 
 .img{
@@ -35,3 +44,6 @@ h1, h3{
     margin-left: 20px;
 }
 
+.bouton:focus{
+    border: none;
+}
