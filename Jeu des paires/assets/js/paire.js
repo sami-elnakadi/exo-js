@@ -48,21 +48,22 @@ document.addEventListener("click", function(a){
 function check() {
     if(p1.src2==p2.src2){
         p2.src = p1.src = 'assets/img/transp1.png';
-        score=+ 50;
+        score = score + 50;
         alert("Bien joué, tu as trouvé une paire!");
     }
     else{
         p2.src = p1.src = 'assets/img/carte.jpg';
         score = Math.max(0, score-20);
-        alert('Les 2 images sont différentes ');
     }
     step = 1;
     checkScore.textContent = score;
 
     //fin du jeu
-    if(document.getElementsByTagName('img').length==0){
-        alert('Vous avez gagné!');
-        checkScore.textContent = 'Gagné!';
+    for(let i=0; i<pics.length;i++){
+        if(pics[i].src2 === 'assets/img/transp1.png'){
+       alert('Vous avez gagné la partie!')
+    }
+    console.log(pics[i].src2);
     }
 }
 

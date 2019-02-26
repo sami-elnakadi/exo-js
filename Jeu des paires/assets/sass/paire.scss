@@ -7,21 +7,40 @@
 
 }
 
+.tete{
+    background-color: rgba(163, 163, 196, 0.5);
+    width: 500px;
+    margin-left: 400px;
+}
+
 body{
-    background-color: #ABC8E2;
+    // background-color: #ABC8E2;
+    background-image: url('../img/fond.jpg');
+    background-repeat: no-repeat;
+    z-index: 3;
+   
     
 }
 
 h1, h3{
     font-family: 'one_pieceregular';
     text-align: center;
+    color: black;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 22px;
 }
 
 .fond{
     background-image: url('../img/logo1.png');
     z-index : 2;
     background-repeat: no-repeat;
-    margin-left: 465px;
+    margin-left: 470px;
 }
 
 .jeu{
@@ -30,9 +49,9 @@ h1, h3{
     margin-right: 460px;
 }
 
-.img{
-    border: 1px solid white;
-}
+// .img{
+//  border: 1px solid white;
+// }
 
 .bouton{
     border: 3px solid white;
