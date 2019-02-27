@@ -38,7 +38,6 @@ document.addEventListener("click", function(a){
         break;
         timer = setTimeout(check, 2000);
         case 3: //click qui suit: compare
-            clearTimeout(timer);
             check();
             
         break;
@@ -50,6 +49,7 @@ function check() {
         p2.src = p1.src = 'assets/img/transp1.png';
         score = score + 50;
         alert("Bien joué, tu as trouvé une paire!");
+        // desactiveCarte();
     }
     else{
         p2.src = p1.src = 'assets/img/carte.jpg';
@@ -60,14 +60,47 @@ function check() {
 
     //fin du jeu
     for(let i=0; i<pics.length;i++){
-        if(pics[i].src2 === 'assets/img/transp1.png'){
+        if(pics[i].src2 === 'assets/img/transp1.png' && pics[i].src1 === 'assets/img/transp1.png'){
        alert('Vous avez gagné la partie!')
     }
     console.log(pics[i].src2);
     }
 }
 
+//Désactiver
+// function desactiveCarte() {
+//     p1.removeEventListener('click', check);
+//     p2.removeEventListener('click', check);
+    
+//     reset();
+//     }
+
 //recommencer
 function rejoue(){
     document.location.reload(true);
 }
+
+//timer
+
+let seconds=90;
+
+
+function secondPass(){
+    let minutes = Math.round((seconds - 30)/60);
+    let secondeRestante = seconds % 60;
+    
+    if(secondeRestante < 10){
+        secondeRestante = "0" +secondeRestante;
+    }
+
+    document.getElementById('countdown').innerHTML = minutes + ":" + secondeRestante;
+    
+    if(seconds==0){
+        clearInterval(countdownTimer);
+        alert('STOP, tu as perdu!');
+    }
+    else{
+        seconds--;
+    }
+}
+let countdownTimer = setInterval('secondPass()',1000);
