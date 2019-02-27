@@ -9,6 +9,7 @@ req.onload = function(){
         document.getElementById('author').innerHTML = JSON.parse(this.responseText).author;
         document.getElementById('Id').innerHTML = JSON.parse(this.responseText).id;
         document.getElementById('permalink').innerHTML = JSON.parse(this.responseText).permalink;
+        document.getElementById('image').setAttribute("src",JSON.parse(this.responseText).photo);
         
     }
     

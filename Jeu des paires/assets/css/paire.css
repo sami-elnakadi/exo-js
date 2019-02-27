@@ -12,9 +12,9 @@ h3 { font-size: 22px; }
 
 .timer { font-size: 20px; text-align: center; }
 
-.fond { background-image: url("../img/logo1.png"); z-index: 2; background-repeat: no-repeat; margin-left: 470px; }
+.fond { background-image: url("../img/logo1.png"); z-index: 2; background-repeat: no-repeat; margin-left: 500px; }
 
-.jeu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-right: 460px; }
+.jeu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-right: 450px; }
 
 .bouton { border: 3px solid white; border-radius: 20%; font-family: 'one_pieceregular'; font-size: 18px; height: 30px; width: auto; margin-left: 20px; }
 
