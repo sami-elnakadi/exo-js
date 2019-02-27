@@ -1,10 +1,12 @@
-blockquote { font-family: 'Roboto Condensed', sans-serif; margin-top: 30px; }
+blockquote { font-family: 'Roboto Condensed', sans-serif; padding-top: 10px; }
 
 .block { background-color: blue; z-index: 2; text-align: center; }
 
-#quote { background-color: rgba(247, 232, 232, 0.335); font-size: 28px; }
+#quote { background-color: rgba(247, 232, 232, 0.335); margin-top: 10px; font-size: 28px; }
 
 #author { font-size: 22px; }
 
 #image { border-radius: 60%; height: 20%; width: auto; }
+
+#id, #permalink { font-size: 10px; }
 /*# sourceMappingURL=ajax.css.map */
